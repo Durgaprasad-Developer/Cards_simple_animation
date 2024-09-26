@@ -1,0 +1,265 @@
+@import url('https://fonts.cdnfonts.com/css/osake');
+
+                
+body{
+    padding:10px;
+    font-family:"Osake";
+    font-weight: 100;
+    font-style: normal;
+    
+    background-color: #000000;
+    color:#ffffff;
+}
+.container{
+    height:880px;
+    background-image: url(/img/Designer\ \(1\).png);
+    background-size: 100% 100%;
+    border-radius:50px;
+    margin:20px;
+    box-shadow: 0px 0px 30px #ff00b7;
+}
+.container:hover{
+    box-shadow: 0px 0px 40px #ff00b3;
+    height:885px;
+    width:auto;
+    border-radius:30px;
+    transition : 0.2s ease-in;
+    margin:20px 10px;
+}
+.navbar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navbar>div{
+    margin-right:70px;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bolder;
+    animation:slowBlink 3s;
+    text-align:center;
+    transition:opacity 0.5opacitys ease-in-out;
+}
+.navbar>div:hover{
+    color:#ED3EF7;
+}
+.details{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    top:500px;
+}
+.name{
+    text-align: center;
+}
+.name>h1{
+    font-weight: 900;
+    font-size: 90px;
+    color:#ffffff;
+    margin:0px;
+    animation:slowBlink 3s ;
+    transition:opacity 0.5s ease-in-out;
+}
+@keyframes slowBlink{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+.name>p>h1,.btn>button,.navbar,.container{
+    animation:slowBlink 1s;
+    transition:opacity 0.3s ease-in-out;
+}
+.name>p{
+    font-size: 20px;
+    color:#d4bfbf;
+    margin:2px;
+    animation:slowBlink 3s;
+    transition:opacity 0.5s ease-in-out;
+    font-weight:bold;
+}
+.btn>button{
+    margin:100px;
+    padding:30px;
+    border-radius:50px;
+    width:200px;
+    border:2px solid #FEECB3;
+    background:linear-gradient(21deg ,#BF2EF0 30%, #ED3EF7 50.5%);
+    box-shadow:0px 0px 8px  #FEECB3;
+    color:#FEECB3;
+    animation:slowBlink 3s;
+    transition:opacity 0.3s ease-in-out;
+}
+.btn>button:hover{
+    border:3px solid #FEECB3;
+    box-shadow:1px 1px 8px #FEECB3;
+    background:linear-gradient(60deg , #ED3EF7 30% , #BF2EF0 50.5%);
+}
+.skills>h1{
+    text-align:center;
+    font-size:70px;
+}
+.skills_cards{
+    display:flex;
+}
+.skills_cards>img{
+    position:absolute;
+    animation:slowBlink 3s;
+    width:500px;
+    height:500px;
+}
+.card_container{
+    display:flex;
+    justify-content: center;
+    margin:70px 0px 70px 0px;
+}
+.card_container>div{
+    height:400px;
+    width:300px;
+    border-radius: 30px;
+    text-align:center;
+    background:linear-gradient(135deg, #000000, #1e1e1e, #3c3c3c);
+    color:#ffffff;
+    box-sizing: border-box;
+}
+.card>img{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+}
+.card{
+    position: relative;
+    transition-duration: 1s; 
+    /* transition-delay: 2s ; */
+}
+.card1{
+    left:600px;
+    animation:slowBlink 0.4s;
+    border-left:2px solid #ffffff;
+} 
+.card2{
+    left:450px;
+    animation:slowBlink 0.5s;
+}
+.card3{
+    left:300px;
+    animation:slowBlink 0.6s;
+}
+.card4{
+    left:150px;
+    animation:slowBlink 0.7s;
+}
+.card5{
+    left:0px;
+    animation:slowBlink 0.8s;
+}
+.card6{
+    left:-150px;
+    animation:slowBlink 0.9s;
+}
+.card1:hover{
+    left:490px;
+    transform:rotate(-5deg);
+}
+.card2:hover{
+    left:340px;
+    transform: rotate(-5deg);
+}
+.card3:hover{
+    left:190px;
+    transform:rotate(-5deg);
+}
+.card4:hover{
+    left:50px;
+    transform:rotate(-5deg);
+}
+.card5:hover{
+    left:-70px;
+    transform:rotate(-5deg)
+}
+.about_main{
+    background:url(/img/Goku_monk.png);
+    opacity:0.8;
+    background-size:auto;
+    height:700px;
+    border-radius:30px;
+    margin:70px 0px 70px 0px;
+    box-shadow:0px 0px 80px #ff8800;
+}
+.about_main>h2{
+    text-align:center;
+    margin:30px;
+    font-size:70px;
+}
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.about>div{
+    height:400px;
+    width:300px;
+    border:7px solid #ff7700;
+    background-color:#ff7700;
+    margin:100px;
+    font-weight:bold;
+    border-radius:30px;
+    
+}
+.anime{
+    transition-duration:2s;
+    box-sizing: border-box;
+}
+.anime :nth-child(3) {
+    display: none;
+    padding: 50% 0px;
+    text-align: center;
+}
+
+.anime:hover :nth-child(2), .anime:hover :nth-child(1) {
+    display: none;
+    
+}
+.anime:hover{
+    background-color:#ff77009c;
+    transform:rotateY(180deg);
+}
+
+.hover_show:hover{
+    transform: rotateY(-180deg);
+}
+.anime:hover :nth-child(3) {
+    display: block;
+}
+
+.contact{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    /* text-align: center; */
+    padding:100px;
+    border:2px solid #BF2EF0;
+    /* padding:fit-content; */
+    height:300px;
+    width:300px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin:30px;
+}
+form>h2{
+    font-size:9px;
+    margin-bottom:30px;
+
+}
+
+
