@@ -181,7 +181,7 @@ body{
     transform:rotate(-5deg)
 }
 .about_main{
-    background:url(/img/Goku_monk.png);
+    background:url("img/Goku_monk.png");
     opacity:0.8;
     background-size:auto;
     height:700px;
